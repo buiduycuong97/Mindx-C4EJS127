@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,p,span,a{
+            margin: 0px;
+        }
+        .navbar{
+            background-color: black;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+            font-size: 20px;
+            width: 100%;
+            height: 80px;
+            color:white;
+            display: flex;
+            justify-content: end;
+            align-items:center;
+            position: relative;
+            position: fixed;
+        }
+        .navbar > div{
+            width: 80px;
+        }
+        .mindx{
+            position: absolute;
+            left: 20px;
+            
+        }
+        .login{
+            border: 3px solid rgb(161, 145, 135);
+            width: 80px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            border-radius: 10px;
+            background-image: linear-gradient(to top right,black,rgb(15, 15, 15),rgb(128 235 208),rgba(231, 224, 224, 0.527),black);
+
+        }
+        .signup{
+            width: 80px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            border-radius: 10px;
+            border: 3px solid rgb(161, 145, 135);
+            background-image: linear-gradient(to top left,black,rgb(15, 15, 15),rgb(128 235 208),rgba(231, 224, 224, 0.527),black);
+        }
+        a{
+            
+            color:white;
+        }
+        .welcome{
+            height: 600px;
+            background-image: linear-gradient(to bottom,white 1%, dodgerblue 40% ,red);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .project{
+            background-image: linear-gradient(to left,#b6c4c9,aqua,dodgerblue,#bcdddb);
+            padding-bottom: 50px;
+        }
+        
+        .prj1{
+            display: block;
+            color: white;
+            font-size: 40px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding-top: 50px;
+            border-bottom: 2px solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        .prj2{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-content: space-between;
+            
+        }
+        .content{
+            margin-top:-5px;
+            padding: 10px 20px;
+            background-color: black;
+            text-align: center;
+            color: white;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .block{
+            width:30%;
+            margin-bottom: 30px;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .hove{
+            text-decoration: none;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+      /* .background {
+          background-image: url(https://resources.mindx.edu.vn/uploads/images/anh%20web-02.png);
+          width:100%;
+          height: 300px;
+          background-size: contain;
+      } */
+        .show{
+            text-align: center;
+            margin: 50px;
+            padding: 20px;
+        }
+        .showall{
+            font-size: xx-large;
+            background-color: gray;
+            padding: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bolder;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        .showall:hover{
+            background-color: brown;
+        }
+        .information{
+            background-image: linear-gradient(to bottom,#2cbaf1 1%, dodgerblue 40% ,red);
+            text-align: center;
+            padding: 100px;
+        }
+        .icon{
+            width: 600px;
+            font-size: 30px;
+            color: white;
+            display: flex;
+            justify-content: space-around;
+            margin: 50px auto;
+            padding-top: 100px;
+        }
+        .decor:hover{
+            color: lightgreen;
+        }
+        .decor{
+            text-decoration: none;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+    </style>
+</head>
+<body>
+    <!--Start nav-->
+    <div class="navbar">
+        <div class="mindx" style="width:160px;font-size: 27px;">mindX School</div>
+        <div>About</div>
+        <div>Project</div>
+        <div>Contact</div>
+        <div class="login"><a  href="https://www.google.com/">Log In</a></div>
+        <div class="signup"><a href="https://www.google.com/">Sign Up</a></div>
+
+    </div>
+    
+    <!--End nav -->
+
+    <!--Start welcome-->
+    <div class="welcome">
+        <h1 style="color:white;font-size: 80px;">Hey I am mindXer</h1>
+        <p style="font-size: 30px;font-style: italic;">A Full Stack Web Developer</p>
+        
+    </div>
+    <!--End welcome-->
+
+    <!--Start project-->
+    <div class="project">
+        <div class="prj1">
+            <span>These are some of my projects </span>
+        </div>
+        <p></p>
+        <div class="prj2">
+            <!-- block 1 -->
+            <div class="block">
+                <a class="hove" href="">
+                    <div> <img src="https://resources.mindx.edu.vn/uploads/images/anh%20web-02.png" alt=""></div>
+                   
+                  <div class="content"><span><</span class="hover"> Sample 1 <span class="hover">/></span></div>
+                </a>
+            </div>
+            <!-- block 2 -->
+            <div class="block">
+                <a class="hove" href="">
+                    <div> <img src="https://resources.mindx.edu.vn/uploads/images/anh%20web-10.png" alt=""></div>
+                   
+                    <div class="content"><span><</span class="hover"> Sample 2 <span class="hover">/></span></div>
+                </a>
+            </div>
+            <div class="block">
+                <a class="hove" href="">
+                    <div> <img src="https://resources.mindx.edu.vn/uploads/images/anh%20web-11%20.png" alt=""></div>
+                   
+                    <div class="content"><span><</span class="hover"> Sample 3 <span class="hover">/></span></div>
+                </a>
+            </div>
+            <div class="block">
+                <a class="hove" href="">
+                    <div> <img src="https://resources.mindx.edu.vn/uploads/images/anh%20web-08.png" alt=""></div>
+                   
+                    <div class="content"><span><</span class="hover"> Sample 4 <span class="hover">/></span></div>
+                </a>
+            </div>
+            <div class="block">
+                <a class="hove" href="">
+                    <div> <img src="https://resources.mindx.edu.vn/uploads/images/anh%20web-13%20.png" alt=""></div>
+                   
+                    <div class="content"><span><</span class="hover"> Sample 5 <span class="hover">/></span></div>
+                </a>
+            </div>
+            <div class="block">
+                <a class="hove" href="">
+                    <div> <img src="https://resources.mindx.edu.vn/uploads/images/anh%20web-12.png" alt=""></div>
+                   
+                    <div class="content"><span><</span class="hover"> Sample 6 <span class="hover">/></span></div>
+                </a>
+            </div>
+        </div>
+        <div class="show">
+            <a class="showall" href="http://127.0.0.1:5500/index.html" target="_blank">Show all <i>></i>    </a>
+        </div>
+    </div>
+    <!--End project-->
+
+    <!--Start contact-->
+    <div class="information">
+        <div style="font-size: 50px;font-weight: bold;color: white;">Let's work togerther...</div>
+        <div style="font-size: 20px;font-style: italic;color: white;">How do you take your coffee?</div>
+        <div class="icon">
+            <div><a class="decor" href="">Facebook</a></div>
+            <div><a class="decor" href="">GitHub</a></div>
+            <div><a class="decor" href="">Send a mail</a></div>
+            <div><a class="decor" href="">Call me</a></div>
+        </div>
+    </div>
+    <!--End contact-->
+
+    <!--Start footer-->
+    
+    <div style="background-color: black;height: 100px; position: relative;;">
+        <div style="color: white;position: absolute;left:100px;top:40px;">**This is just a fake portfolio. All the projects and contact details given are not real.</div>
+        <div style="color: white;position: absolute;right:200px;top:40px;"> © Created for mindX Technology School</div>
+    </div>
+    <!--End footer-->
+</body>
+</html>
