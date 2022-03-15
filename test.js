@@ -70,3 +70,4 @@ if (a4 % 3 == 0) {
     console.log(`So k chia het cho 3 va du ${v}`)
 }
 prompt
+console.log();
