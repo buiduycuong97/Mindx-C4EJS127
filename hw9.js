@@ -51,4 +51,21 @@
 // );
 
 
-//
+//Dang nhap
+function signIn(id, pass) {
+    id = prompt("Nhap ID")
+    if (id == "admin") {
+        console.log("Ban can nhap mat khau");
+        pass = prompt("Nhap password")
+        if (pass == "cafedev") {
+            console.log("Chao mung");
+        } else if (pass == "") {
+            console.log("Da huy");
+        } else {
+            console.log("Mat khau sai");
+        }
+    } else if (id == "") {
+        console.log("Canceled");
+    } else { console.log("Toi khong biet ban"); }
+}
+signIn();
