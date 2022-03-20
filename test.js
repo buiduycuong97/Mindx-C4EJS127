@@ -49,17 +49,17 @@
 //     console.log(`${a} la so le`);
 // }
 
-let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-lengMyArray = Array.length;
-let myArray2 = [];
-for (let i = 0; i < lengMyArray; i++) {
+// let myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// lengMyArray = Array.length;
+// let myArray2 = [];
+// for (let i = 0; i < lengMyArray; i++) {
 
-    if (myArray[i] % 2 == 0) {
+//     if (myArray[i] % 2 == 0) {
 
-        myArray2 += myArray.pop(i);
-    } else {
-        continue;
-    }
-    console.log(myArray2);
-    myArray.splice
-}
+//         myArray2 += myArray.pop(i);
+//     } else {
+//         continue;
+//     }
+//     console.log(myArray2);
+//     myArray.splice
+// }
