@@ -27,6 +27,7 @@
             font-weight: 900;
             font-size: 24px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
         }
         
         .navbar a:hover {
@@ -55,7 +56,7 @@
         
         .main {
             width: 100%;
-            background-color: #86471c;
+            background-color: rgba(124, 71, 28, 1);
         }
         
         .title {
@@ -72,41 +73,79 @@
             margin-left: auto;
             margin-right: auto;
             border-bottom: 3px solid aliceblue;
-        }
-        
-        .img1 {
-            width: 900px;
-            margin: auto;
-        }
-        
-        .img2 {
-            width: 900px;
-            margin: auto;
-        }
-        
-        .img3 {
-            width: 900px;
-            margin: auto;
-        }
-        
-        .img4 {
-            width: 900px;
-            margin: auto;
-        }
-        
-        .img5 {
-            width: 900px;
-            margin: auto;
-        }
-        
-        .img6 {
-            width: 900px;
-            margin: auto;
+            text-shadow: 5px 5px 1px #000000;
         }
         
         .content img {
+            width: 600px;
+            height: 450px;
+        }
+        
+        .content {
             width: 100%;
-            height: 100%;
+            display: inline-block;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        .welcome {
+            width: 900px;
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-weight: 700;
+            color: aliceblue;
+            text-align: center;
+            padding-top: 100px;
+            padding-bottom: 50px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top: 3px solid aliceblue;
+        }
+        
+        .footer {
+            background-color: wheat;
+            font-weight: 700;
+            font-size: 25px;
+            padding-bottom: 50px;
+            padding-top: 30px;
+            position: relative;
+        }
+        
+        .add {
+            position: absolute;
+            left: 10px;
+        }
+        
+        .tel {
+            position: absolute;
+            right: 10px;
+        }
+        
+        .stt {
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #583213;
+            border-radius: 5px;
+            border: 2px solid white;
+            color: aliceblue;
+            padding: 20px;
+        }
+        
+        .stt2 {
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #583213;
+            border-radius: 5px;
+            border: 2px solid white;
+            color: aliceblue;
+            padding: 20px;
         }
     </style>
 </head>
@@ -124,18 +163,22 @@
             <a href="">TRANG CHỦ</a>
         </div>
         <div class="menu navbar">
-            <a href="">THỰC ĐƠN</a>
+            <a href="" target="_blank">THỰC ĐƠN</a>
         </div>
         <div class="event navbar">
             <a href="">SỰ KIỆN</a>
         </div>
+        <div class="new navbar">
+            <a href="">BẢNG TIN</a>
+        </div>
         <div class="contact navbar">
-            <a href="">LIÊN HỆ</a>
+            <a href="#foo">LIÊN HỆ</a>
         </div>
 
     </div>
     <div class="main">
         <div class="title">Toast 'n Tea...</div>
+
         <div class="content">
             <div class="img1">
                 <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.18169-9/10881487_398488866981786_5747423328890367992_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=19026a&_nc_ohc=bUf7FtUMN4QAX--5D1a&_nc_ht=scontent.fhan2-1.fna&oh=00_AT8na-W4SZSM29mIAr-gVDcrX2zQ66hD6O5Q-koZoaxcpQ&oe=625819A6"
@@ -156,6 +199,52 @@
                 <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.18169-9/10360451_441611492669523_5173028755908885524_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=19026a&_nc_ohc=0ZuHlqaSH3wAX-Fa9pp&_nc_oc=AQmy_MH1ig-T_3IsbIZcW7HUkZG6VNqsUnXMVQOdmUR1bBnFuQ0PFjDRSPOIhGC06JdDlbz2p_7T66uKJ3uSzjiJ&_nc_ht=scontent.fhan2-1.fna&oh=00_AT9_XsWGNGk38Xak8g4hubnQ_gfC3bjmiqCjIC3m1Sy77Q&oe=625BC5D7"
                     alt=""></div>
         </div>
+        <div class="welcome"><ins>Để hỗ trợ tốt nhất trong mùa dịch, Toast 'n Tea có một số điều chỉnh nho nhỏ sau:</ins>
+
+            <ul>
+                <br>
+                <li>Chỉ nhận ship qua hotline, inbox fanpage và NOW.</li>
+                <li>Thời gian nhận order qua hotline từ 09:00 đến 20:30.</li>
+                <li>FREESHIP bán kính 3km khi order qua hotline.</li>
+            </ul>
+        </div>
+
+        <div style="display:flex;justify-content:center;padding-bottom: 50px;">
+            <div style="width: 700px;"><img style="box-shadow:10px 10px 5px white   ;" width="100%" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/110526780_1595934097237251_6188132352642773033_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=A-s6UDzJX1EAX-gAoGv&_nc_ht=scontent.fhan2-3.fna&oh=00_AT9P1ZfOnq4NDY6zgZixHLb0yqcoT9Ma_agAk0oqA_8gRA&oe=625FD595"
+                    alt="">
+            </div>
+        </div>
+        <h1>Bảng Tin</h1>
+        <div class="stt">
+            30 tháng 5, 2021 <br><br>
+            <div style="display: inline-block;">
+                <img width="300px" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/202057794_215502720484268_4606646774730480707_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=5J6oGACKgrkAX8C9VZz&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_XJa_KT7ksHJxVt8dMsh6hJ1TioqBZ_mANM8l7NhKsvQ&oe=62442719"
+                    alt="">
+            </div>
+            <div style="display: inline-block;display: flex;align-items:flex-start;">
+                Burger bò sốt Avocado Một sự kết hợp hoàn hảo đã đem đến danh hiệu Ngôi sao của tuần cho BURGER BÒ SỐT AVOCADO. Đang vào mùa bơ nên Sốt avocado béo ngậy thịt bơ, thịt bò nướng hơi xém cộng thêm vài lát 𝙗𝙖𝙘𝙤𝙣 và những 𝙣𝙖̂́𝙢 𝙨𝙤̂́𝙩 𝙝𝙖̀𝙣𝙝 𝙩𝙖̂𝙮
+            </div>
+        </div>
+        <hr>
+        <h1>Sự kiện</h1>
+        <div class="stt2">
+            30 tháng 5, 2021 <br><br>
+            <div style="display: inline-block;">
+                <img width="300px" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/273541547_340944644606741_4795334569153660777_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=0ku4HIR7buIAX9b2xfn&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8Q_oHBXyXSi5sQYYBjtrsPE5-5ljDKgAPEELZuapP32Q&oe=62454B41"
+                    alt="">
+            </div>
+            <div style="display: inline-block;display: flex;align-items:flex-start;">
+                🅥🅐🅛🅔🅝🅣🅘🅝🅔 🅓🅘🅝🅝🅔🅡 >> Top choice cho bữa tối Valentine lãng mạn. Chẳng cần nến và hoa bởi The Hungry Co. sẽ chuẩn bị hết cho bạn: <br>💙 Menu đặc biệt cho Valentine gồm 1 khay Sườn nướng BBQ + Bánh cua Crab cake béo ngậy,
+                Side salad, 2 Mỳ cua + 2 ly mocktail Redbliss ngọt ngào sẽ khiến nàng đắm đuối <br>💙 Không gian ngoài trời xanh mướt , lung linh cực lãng mạn tại địa điểm hidden away sẽ khiến nàng bất ngờ. <br>💙 Set up nến, hoa & nhạc sẽ khiến nàng
+                si mê.
+                <br>💙 Giá tiền cực mềm chỉ 299k/người sẽ khiến chàng yên tâm tiếp tục cuộc chơi các tăng sau đó. >> Chương trình chỉ áp dụng từ ngày 12 - 14/02. Đặt bàn trước để được set up bàn với nến, hoa miễn phí.
+            </div><br><br>
+        </div>
+        <div class="footer" id="foo">
+            <div class="add">🏠 07 Hoàng Cầu, Đống Đa, Hà Nội</div>
+            <div class="tel">☎️ 096.678.8840 -- 098.856.7881</div>
+
+        </div>
     </div>
 
 
@@ -163,5 +252,7 @@
 </body>
 
 <script src="./test.js"></script>
+
+</html>
 
 </html>
