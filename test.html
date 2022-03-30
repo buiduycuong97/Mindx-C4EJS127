@@ -83,6 +83,7 @@
         
         .content {
             width: 100%;
+            height: 100%;
             display: inline-block;
             display: flex;
             flex-wrap: wrap;
@@ -143,10 +144,48 @@
             margin-bottom: 20px;
             background-color: #583213;
             border-radius: 5px;
-            border: 2px solid white;
             color: aliceblue;
-            padding: 20px;
         }
+        
+        .formmenu img {}
+        
+        .formmenu {
+            width: 100%;
+            display: flex;
+        }
+        
+        .listmenu {
+            width: 35%;
+            display: inline-block;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 100px;
+        }
+        
+        .containmenu {
+            width: 80%;
+            display: inline-block;
+            display: flex;
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+        }
+        
+        .containmenu img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .containmenu>div>div {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .containmenu>div {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        
+        h2 {}
     </style>
 </head>
 
@@ -228,21 +267,127 @@
         <hr>
         <h1>Sự kiện</h1>
         <div class="stt2">
-            30 tháng 5, 2021 <br><br>
+            <div style="padding: 20px;font-size: 30px;color:rgb(255, 96, 189);">🅥🅐🅛🅔🅝🅣🅘🅝🅔--🅓🅘🅝🅝🅔🅡</div>
+            <div style="display: inline-block;display: flex;align-items:flex-start;padding: 20px;">
+                >> Top choice cho bữa tối Valentine lãng mạn. Chẳng cần nến và hoa bởi The Hungry Co. sẽ chuẩn bị hết cho bạn: <br>💙 Menu đặc biệt cho Valentine gồm 1 khay Sườn nướng BBQ + Bánh cua Crab cake béo ngậy, Side salad, 2 Mỳ cua + 2 ly mocktail
+                Redbliss ngọt ngào sẽ khiến nàng đắm đuối <br>💙 Không gian ngoài trời xanh mướt , lung linh cực lãng mạn tại địa điểm hidden away sẽ khiến nàng bất ngờ. <br>💙 Set up nến, hoa & nhạc sẽ khiến nàng si mê.
+                <br>💙 Giá tiền cực mềm chỉ 299k/người sẽ khiến chàng yên tâm tiếp tục cuộc chơi các tăng sau đó. >> Chương trình chỉ áp dụng từ ngày 12 - 14/02. Đặt bàn trước để được set up bàn với nến, hoa miễn phí.
+            </div>
             <div style="display: inline-block;">
-                <img width="300px" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/273541547_340944644606741_4795334569153660777_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=0ku4HIR7buIAX9b2xfn&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8Q_oHBXyXSi5sQYYBjtrsPE5-5ljDKgAPEELZuapP32Q&oe=62454B41"
+                <img style="border-radius: 10px;" width="100%" src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/273541547_340944644606741_4795334569153660777_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=730e14&_nc_ohc=0ku4HIR7buIAX9b2xfn&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8Q_oHBXyXSi5sQYYBjtrsPE5-5ljDKgAPEELZuapP32Q&oe=62454B41"
                     alt="">
             </div>
-            <div style="display: inline-block;display: flex;align-items:flex-start;">
-                🅥🅐🅛🅔🅝🅣🅘🅝🅔 🅓🅘🅝🅝🅔🅡 >> Top choice cho bữa tối Valentine lãng mạn. Chẳng cần nến và hoa bởi The Hungry Co. sẽ chuẩn bị hết cho bạn: <br>💙 Menu đặc biệt cho Valentine gồm 1 khay Sườn nướng BBQ + Bánh cua Crab cake béo ngậy,
-                Side salad, 2 Mỳ cua + 2 ly mocktail Redbliss ngọt ngào sẽ khiến nàng đắm đuối <br>💙 Không gian ngoài trời xanh mướt , lung linh cực lãng mạn tại địa điểm hidden away sẽ khiến nàng bất ngờ. <br>💙 Set up nến, hoa & nhạc sẽ khiến nàng
-                si mê.
-                <br>💙 Giá tiền cực mềm chỉ 299k/người sẽ khiến chàng yên tâm tiếp tục cuộc chơi các tăng sau đó. >> Chương trình chỉ áp dụng từ ngày 12 - 14/02. Đặt bàn trước để được set up bàn với nến, hoa miễn phí.
-            </div><br><br>
+
         </div>
+        <hr>
+        <br>
+        <!-- Start menu -->
+
+        <div class="formmenu">
+            <div class="listmenu">
+                <ul>
+                    <li>SANDWICH</li>
+                    <li>SALAD</li>
+                </ul>
+            </div>
+            <div class="containmenu">
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-9/62007887_1239522196211778_1585009675739332608_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=QpTAG7iUoZoAX-7TKRO&_nc_ht=scontent.fhan2-2.fna&oh=00_AT_FCGce008YFhcCFcpBUM8t7qcdt9yG1Wm5EpTJAq_VUw&oe=62697005"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Waffle <br>
+                        <h3>56.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/197462217_188340989867108_4243181771306887968_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=aX5yBET29ngAX8ie_fX&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8JMXDkdnjdPy22brRElpqd8BeBsrc-zKZEYbQKI15iTw&oe=6265A912"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Ga nuong BBQ<br>
+                        <h3>64.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/202057794_215502720484268_4606646774730480707_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=730e14&_nc_ohc=5J6oGACKgrkAX8C9VZz&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_XJa_KT7ksHJxVt8dMsh6hJ1TioqBZ_mANM8l7NhKsvQ&oe=62442719"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Holy Cow Burger<br>
+                        <h3>68.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-9/195895619_188340986533775_3314583743756308151_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=i77gzqstHzkAX9AV7Vz&_nc_ht=scontent.fhan2-2.fna&oh=00_AT8NGFqDm1BvPmpir49za_9MYDYCJTlLeNB0pYLF3liVbg&oe=6266209D"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Ga Toc Vay<br>
+                        <h3>76.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/195742436_188340983200442_4072578544779096514_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Tlu_DoPWms0AX-m4W04&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-8UuMaV_jQ-ClZn0Z3nNtc3l9-fHwPcv69-b_VgzMcVw&oe=626502B0"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Burger Gà<br>
+                        <h3>85.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/195742436_188340983200442_4072578544779096514_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Tlu_DoPWms0AX-m4W04&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-8UuMaV_jQ-ClZn0Z3nNtc3l9-fHwPcv69-b_VgzMcVw&oe=626502B0"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Burger Gà<br>
+                        <h3>85.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/195742436_188340983200442_4072578544779096514_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Tlu_DoPWms0AX-m4W04&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-8UuMaV_jQ-ClZn0Z3nNtc3l9-fHwPcv69-b_VgzMcVw&oe=626502B0"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Burger Gà<br>
+                        <h3>85.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/195742436_188340983200442_4072578544779096514_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Tlu_DoPWms0AX-m4W04&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-8UuMaV_jQ-ClZn0Z3nNtc3l9-fHwPcv69-b_VgzMcVw&oe=626502B0"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Burger Gà<br>
+                        <h3>85.000 Đ</h3>
+                    </h2>
+                </div>
+                <div>
+                    <div>
+                        <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.6435-9/195742436_188340983200442_4072578544779096514_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=Tlu_DoPWms0AX-m4W04&_nc_ht=scontent.fhan2-1.fna&oh=00_AT-8UuMaV_jQ-ClZn0Z3nNtc3l9-fHwPcv69-b_VgzMcVw&oe=626502B0"
+                            alt="">
+                    </div><br>
+                    <h2>
+                        Burger Gà<br>
+                        <h3>85.000 Đ</h3>
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- End menu -->
         <div class="footer" id="foo">
-            <div class="add">🏠 07 Hoàng Cầu, Đống Đa, Hà Nội</div>
-            <div class="tel">☎️ 096.678.8840 -- 098.856.7881</div>
+            <div class="add">🏠 Đống Đa, Hà Nội</div>
+            <div class="tel">☎️ 096.***.**** -- 098.***.****</div>
 
         </div>
     </div>
