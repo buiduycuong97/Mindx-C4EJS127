@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        body {
+            font-family: Verdana, sans-serif;
+        }
+        
+        .mySlides {
+            width: 100%;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            width: 100%;
+            position: relative;
+            margin: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.18169-9/10881487_398488866981786_5747423328890367992_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=19026a&_nc_ohc=bUf7FtUMN4QAX--5D1a&_nc_ht=scontent.fhan2-1.fna&oh=00_AT8na-W4SZSM29mIAr-gVDcrX2zQ66hD6O5Q-koZoaxcpQ&oe=625819A6"
+                style="width:100%;height: 650px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/94639879_1518675578296437_2721812722135072768_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=NYzb8nw3LKMAX_Po_hO&tn=r35wZyoCpykgF3pr&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8h8G3wopdHrpTl3TTpHPcZ9S9jjKxHqDeQyIvQQwHHjg&oe=62587F57"
+                style="width:100%;height: 650px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.18169-9/10882301_402931013204238_3448880434303509560_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ba80b0&_nc_ohc=bvaGdXe6a8QAX8MK6W1&_nc_ht=scontent.fhan2-2.fna&oh=00_AT_1l3Jn6qtW9Di2UWUjt-_qIWk4CkBVcl9hFuIBnRrpCw&oe=6258AF2E"
+                style="width:100%;height: 650px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.18169-9/10360451_441611492669523_5173028755908885524_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=19026a&_nc_ohc=0ZuHlqaSH3wAX-Fa9pp&_nc_oc=AQmy_MH1ig-T_3IsbIZcW7HUkZG6VNqsUnXMVQOdmUR1bBnFuQ0PFjDRSPOIhGC06JdDlbz2p_7T66uKJ3uSzjiJ&_nc_ht=scontent.fhan2-1.fna&oh=00_AT9_XsWGNGk38Xak8g4hubnQ_gfC3bjmiqCjIC3m1Sy77Q&oe=625BC5D7"
+                style="width:100%;height: 650px;">
+        </div>
+        <div style="text-align:center;position: absolute;bottom: 0;left: 0;right: 0;">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>

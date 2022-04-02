@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./train1.css">
+
+    <style>
+        .mySlides {
+            width: 100%;
+        }
+        /* Slideshow container */
+        
+        .slideshow-container {
+            width: 100%;
+            position: relative;
+            margin: 0;
+        }
+        /* The dots/bullets/indicators */
+        
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+        
+        .active {
+            background-color: #717171;
+        }
+        /* Fading animation */
+        
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+        
+        @media only screen and (max-width: 300px) {
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="navbar">
+            <div class="navbarhover"><a href="">TRANG CHỦ</a></div>
+            <div class="navbarhover menu"><a href="">THỰC ĐƠN 
+                <div class="menunavbar list">
+                    <div><a href="">Normal Food & Drink</a></div>
+            <div><a href="">Healthy & Balance Food & Drink</a></div>
+        </div>
+        </a>
+
+
+
+    </div>
+    <div class="navbarlogo">
+        <a href=""><img width="100%" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.6435-9/132430848_101578398543368_7481910720059434755_n.png?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=QCtzlcPs9zYAX_DTcGf&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_atJKrdA5VTwWgwLlI23Kq1BCH8xttV2FeO7SZvqZtsQ&oe=626B72DC"
+                alt=""></a>
+    </div>
+
+    <div class="navbarhover"><a href="">BẢNG TIN</a></div>
+    <div class="navbarhover contact"><a href="">LIÊN HỆ
+        <div class="contactnavbar list">
+            <div><a href="">Đặt Bàn</a></div>
+    <div><a href="">Góp Ý</a></div>
+    </div>
+    </a>
+    </div>
+    </div>
+    <!-- <div class="navbg">
+        <div style="display: flex;">
+            <img width="100%" src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.6435-9/60500815_1219627988201199_6212029981543890944_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=oRvfTYkTmCMAX8SEURJ&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_oxzl4n83BTbJVrSWva-tYgKB9SegDO5NLY7eEcBWiZg&oe=625840F0"
+                alt="">
+        </div>
+    </div> -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-1.fna.fbcdn.net/v/t1.18169-9/10881487_398488866981786_5747423328890367992_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=19026a&_nc_ohc=bUf7FtUMN4QAX--5D1a&_nc_ht=scontent.fhan2-1.fna&oh=00_AT8na-W4SZSM29mIAr-gVDcrX2zQ66hD6O5Q-koZoaxcpQ&oe=625819A6"
+                style="width:100%;height: 650px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/94639879_1518675578296437_2721812722135072768_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=NYzb8nw3LKMAX_Po_hO&tn=r35wZyoCpykgF3pr&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8h8G3wopdHrpTl3TTpHPcZ9S9jjKxHqDeQyIvQQwHHjg&oe=62587F57"
+                style="width:100%;height: 650px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.18169-9/10882301_402931013204238_3448880434303509560_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=ba80b0&_nc_ohc=bvaGdXe6a8QAX8MK6W1&_nc_ht=scontent.fhan2-2.fna&oh=00_AT_1l3Jn6qtW9Di2UWUjt-_qIWk4CkBVcl9hFuIBnRrpCw&oe=6258AF2E"
+                style="width:100%;height: 650px;">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="https://scontent.fhan2-4.fna.fbcdn.net/v/t1.6435-9/60500815_1219627988201199_6212029981543890944_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=e3f864&_nc_ohc=oRvfTYkTmCMAX8SEURJ&_nc_ht=scontent.fhan2-4.fna&oh=00_AT_oxzl4n83BTbJVrSWva-tYgKB9SegDO5NLY7eEcBWiZg&oe=625840F0"
+                style="width:100%;height: 650px;">
+        </div>
+        <div style="text-align:center;position: absolute;bottom: 0;left: 0;right: 0;">
+            <span class=" dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+            <span class="dot "></span>
+        </div>
+    </div>
+    </div>
+
+    <div class="event ">
+        <div class="welcome ">
+            <h1>Welcome to Toast 'n Tea..</h1><br><br>
+            <h2>A café & casual dining for Ha Noi foods lovers <br>Life is better with good food!</h2>
+
+        </div>
+        <div class="event_title ">
+            <h1>Sự Kiện</h1>
+            <div>
+                <hr>
+            </div>
+            <br><br>
+        </div>
+        <div class="event_box ">
+            <div>
+                <div>
+                    <a href=" "><img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-9/139258059_1749047858592540_3164086398725586327_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=wIaMk7metEIAX_ItQvu&_nc_ht=scontent.fhan2-2.fna&oh=00_AT877wmZAuQkbhlpy6_LfaStJEWPcIuAwWb2b4j7ldEa9Q&oe=626B45C4 "
+                            alt=" "></a>
+                </div><br>
+                <h2>Ăn một mình cực đã 😆 Ăn hai mình cực vui 🥰</h2>
+                <p>Dù ghé Toast 'n Tea một mình hay có đôi, vẫn cứ yên trí vì bạn đều được ăn ngon mà không lo đau ví. Ghé chúng mình hôm nay đừng quên order ngay 2 combo dưới đây để thưởng thức những món ăn hot nhất trong menu với giá cực hấp dẫn. Combo
+                    99k/người và 249k/2 người được phục vụ tại Toast 'n Tea mỗi ngày. Nhớ trò chuyện với nhân viên của chúng mình để được lựa chọn món ăn bạn yêu thích nhé!</p>
+            </div>
+            <div>
+                <div>
+                    <a href=" "><img src="https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-9/85045088_1450156655148330_1639190580804190208_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=WtJ3t4lJ_ocAX-h1NBi&_nc_ht=scontent.fhan2-2.fna&oh=00_AT_sQadeZHUl091qY_ADV18Ocw0QQofBA17ZAaG-gRHK8Q&oe=626C5E73 "
+                            alt=" "></a>
+                </div><br>
+                <h2>Cùng Toast' n Tea đón Valentine nồng ấm 💕</h2>
+                <p>Ngày lễ Tình nhân sắp đến rồi, các bạn đã lên kế hoạch cùng người thương của mình chưa? Hãy để chúng mình gợi ý cho bạn nhé. Từ nay cho đến hết ngày 16/2, khi đặt bàn trước các bạn sẽ được ưu tiên trang trí bàn tiệc xinh xắn. Ghé Toast'
+                    n Tea cùng người ấy ngay hôm nay để Valentine thêm ngọt ngào nào.</p>
+            </div>
+            <div>
+                <div>
+                    <a href=" "><img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/137276280_1743179925846000_5154864103822703845_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=WHNtr39MPW8AX-d38xF&_nc_ht=scontent.fhan2-3.fna&oh=00_AT9ZEVNAz6XFnIiGg7itVX4M_kGfaChcd64wz0TtkJ52FQ&oe=626C0395 "
+                            alt=" "></a>
+                </div><br>
+                <h2>HAPPY ALL DAY LONG AT TOAST 'N TEA 🥰</h2>
+                <p>Đi cùng nhóm cạ cứng? Toast 'n Tea tặng bạn thêm món snack nhâm nhi để câu chuyện thêm vui nhộn. Đi một mình ư? Cũng chẳng sao vì bạn có thể thưởng thức chiếc burger tuyệt ngon cho riêng mình. Note lại liền tay ưu đãi của Toast 'n Tea
+                    mỗi ngày và ghé thăm chúng mình ngay nhé!</p>
+            </div>
+        </div><br><br>
+        <div class="hr ">
+            <hr>
+        </div>
+        <br><br>
+    </div>
+
+    <div class="footer ">
+        <div class="ft_ct ">LIÊN HỆ <br><br> ☎️ 096.***.**** -- 098.***.****</div>
+        <div class="ft_cn ">KẾT NÔÍ VỚI CHÚNG TÔI <br><br>
+            <div class="flex ">
+                <div class="position "><img width="15px " src="https://congcaphe.com/_next/static/images/img-social1-4fc4cd981cb1006080240cb7772942e5.png " alt=" "></div>
+            </div>
+            <div class="flex ">
+                <div class="position "><img width="30px " src="https://congcaphe.com/_next/static/images/img-social2-2cc32fbda7ce37c5de995496e2d5cd64.png " alt=" "></div>
+            </div>
+        </div>
+        <div class="ft_ct ">ĐỊA CHỈ <br><br>🏠 Hoàng Cầu - Đống Đa - Hà Nội</div>
+
+
+    </div>
+</body>
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides ");
+        let dots = document.getElementsByClassName("dot ");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none ";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active ", " ");
+        }
+        slides[slideIndex - 1].style.display = "block ";
+        dots[slideIndex - 1].className += " active ";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+</script>
+
+</html>
