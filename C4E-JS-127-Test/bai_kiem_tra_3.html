@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Demo</title>
+</head>
+
+<body>
+    <div id="content" style="height:100%">
+        <h1>ma hex</h1>
+        <div>
+            <input id="hex" readonly type="text">
+
+            <button onclick="random()">click</button>
+            <button onclick="randomGa()">gradient</button>
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        function random() {
+            var a = '#' + Math.floor(Math.random() * 1000000);
+            document.getElementById("hex").value = a;
+            document.body.style.background = a;
+        }
+
+        function randomGa() {
+            var a = '#' + Math.floor(Math.random() * 1000000);
+            var b = '#' + Math.floor(Math.random() * 1000000);
+            var c = '#' + Math.floor(Math.random() * 1000000);
+            var d = '#' + Math.floor(Math.random() * 1000000);
+            document.body.style.background = 'linear-gradient(to right, ' + a + ',' + b + ',' + c + ',' + d + ')';
+
+
+        }
+    </script>
+
+</body>
+
+</html>
