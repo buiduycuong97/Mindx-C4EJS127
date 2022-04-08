@@ -81,7 +81,7 @@ a {
 }
 
 .menu_list {
-    width: 30%;
+    width: 25%;
     border-right: 1px solid rgba(51, 51, 51, 0.39);
     color: #333;
     top: 50px;
@@ -101,7 +101,7 @@ a {
 }
 
 .menu_box {
-    width: 70%;
+    width: 75%;
 }
 
 .menu_box h1 {
@@ -129,7 +129,7 @@ a {
 .set {
     display: inline-block;
     width: 300px;
-    margin: 5px;
+    margin: 15px;
     margin-bottom: 20px;
 }
 
