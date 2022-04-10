@@ -14,6 +14,25 @@
     width: 100%;
     z-index: 1;
 }
+.sub_navbar{
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    margin-top: 50px;
+    display: none;
+    top: 20px;
+}
+
+.sub_navbar a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.navbar_ul1 .menu_link:hover .sub_navbar{
+    display: block;
+}
+
 .navbar_ul1 li:hover{
     text-decoration: underline;
     color: black;

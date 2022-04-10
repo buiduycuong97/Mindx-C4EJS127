@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    color: greenyellow;
+    background-color: black;
+}
+
+.navbar{
+    display: flex;
+    align-items: stretch;
+    height: 100px;
+    padding: 20px;
+    font-size: 25px;
+    color: greenyellow;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    
+}
+.sub_navbar{
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    margin-top: 50px;
+    display: none;
+    top: 0px;
+}
+
+.sub_navbar a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.navbar_ul1 .menu_link:hover .sub_navbar{
+    display: block;
+}
+
+.navbar_ul1 li:hover{
+    text-decoration: underline;
+    color: greenyellow;
+    scale: (1,1);
+}
+
+.navbar_ul1{
+    display: flex;
+    list-style : none;
+    flex-grow: 1;
+    justify-content: end;
+    text-align: center;
+    padding-left: 0px; 
+    position: relative;
+}
+
+.navbar_ul2{
+    display: flex;
+    list-style : none;
+    flex-grow: 1;
+    justify-content: end;
+    text-align: center;
+    padding-right: 30px;
+    position: relative;
+}
+
+.navbar_home{
+    flex-grow: 7;
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+}
+.navbar_home a{
+    font-size: 35px;
+}
+
+.ah {
+    color: greenyellow;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+    font-size: 17px;
+}
+
+.ah:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: greenyellow;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.ah:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.container{
+    position: absolute;
+    top: 400px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .ring{
+    position: relative;
+    border: 4px solid transparent;
+    border-top: 4px solid greenyellow ;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: -30px;
+    animation: animate 4s linear infinite;
+    
+}
+@keyframes animate {
+   0% 
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
+.container .ring::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: greenyellow;
+    top : 12px;
+    right: 12px;
+    border-radius:50%;
+}
+.container .ring:nth-child(3)
+{
+    animation: animate2 4s linear infinite;
+    animation-delay: -3s;
+    position: absolute;
+    top: -66.66px ;
+    border-top: 4px solid transparent;
+    border-left: 4px solid greenyellow;
+}
+.container .ring:nth-child(2){
+    animation: animate2 4s linear infinite;
+    animation-delay: -1s ;
+    border-top: 4px solid transparent;
+    border-left:4px solid greenyellow ;
+}
+@keyframes animate2 {
+    0% 
+     {
+         transform: rotate(360deg);
+     }
+     100%
+     {
+         transform: rotate(0deg);
+     }
+     
+}
+.container .ring:nth-child(2)::before{
+    bottom : 12px;
+    left: 12px;
+    top : initial;
+}
+.container .ring:nth-child(3)::before{
+    bottom : 12px;
+    left: 12px;
+    top : initial;
+}
+.target {
+    position: absolute;
+    top: 700px;
+    left: 40%;
+    font-size: 25px;
+    text-align: center;
+    color: greenyellow;
+}
+.audio_p{
+    position: absolute;
+    top: 700px;
+    left: 950px;
+    border: 1px solid black;
+}
+#playButton{
+    border: 1px solid gren;
+    border-radius: 45% ;
+}
+#playButton:hover{
+    background-color: greenyellow;
+    border: 1px solid black;
+    color: black;
+    transition: 0.5s;
+}

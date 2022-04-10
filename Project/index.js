@@ -1,6 +1,6 @@
 var typed = new Typed('.target', {
     strings: [
-        "Try our style.....",
+        "Try our style...............!!!!!",
         "You are going to discover something new !!!"
     ],
     typeSpeed: 100,

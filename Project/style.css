@@ -13,7 +13,28 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    position: relative;
+    
 }
+.sub_navbar{
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    width: 100px;
+    text-decoration: none;
+    margin-top: 50px;
+    display: none;
+    top: 0px;
+}
+
+.sub_navbar a{
+    font-size: 15px;
+    text-decoration: none;
+}
+.navbar_ul1 .menu_link:hover .sub_navbar{
+    display: block;
+}
+
 .navbar_ul1 li:hover{
     text-decoration: underline;
     color: black;
@@ -27,6 +48,7 @@
     justify-content: end;
     text-align: center;
     padding-left: 0px; 
+    position: relative;
 }
 
 .navbar_ul2{
@@ -36,12 +58,14 @@
     justify-content: end;
     text-align: center;
     padding-right: 30px;
+    position: relative;
 }
 
 .navbar_home{
     flex-grow: 7;
     text-align: center;
     font-size: 35px;
+    position: relative;
 }
 .navbar_home a{
     font-size: 35px;
@@ -151,17 +175,14 @@
     left: 12px;
     top : initial;
 }
-.container_target{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.container_target p{
+
+.target {
     position: absolute;
-    top : 700px;
-    color : black;
-    font-size: 23px;
+    top: 700px;
+    left: 40%;
+    font-size: 25px;
+    text-align: center;
 }
 .main{
     width: 100%;
@@ -184,7 +205,7 @@
     font-size: 10px;
     text-align: center;
 }
-.main button{
+.button{
     background-color: black;
     width: 150px;
     height: 50px;
@@ -193,13 +214,20 @@
     position: absolute;
     top: 980px;
     font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+.button span{
     color: white;
+    position: absolute;
+    top: 10px;
+    left: 55px;
 }
-.main button:hover{
+.button:hover{
     transition: 0.5s;
-    background-color: white;
-    color: black;
+    background-color: rgb(97, 95, 95);
 }
+
 .p2{
     position: absolute;
     top: 1100px;
