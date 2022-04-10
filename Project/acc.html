@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #account {
+            position: fixed;
+            top: 200px;
+            left: 50%;
+            padding: 70px;
+            transform: translateX(-50%);
+            background-color: rgb(51, 51, 51);
+            display: none;
+        }
+        
+        #account h1 {
+            margin-bottom: 20px;
+        }
+        
+        #account input {
+            margin-bottom: 10px;
+        }
+        
+        #account form {
+            margin-bottom: 20px;
+        }
+        
+        #account span {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        #exit a {
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="account">
+        <div class="box">
+            <h1>Welcome to DE JAVU</h1>
+            <h3 id="exit" onclick="exit()"><a href="">X</a></h3>
+            <form action="">
+                <input size=40 type="email" placeholder="Email" required><br>
+                <input size=40 type="password" placeholder="Password" required><br>
+                <input onclick="alert(1)" type="button" value="Sign In">
+            </form>
+            <span><a href="">Forgot Password?</a></span>
+            <span><a href="">Create account</a></span>
+        </div>
+    </div>
+</body>
+
+<script>
+    function account() {
+        document.getElementById("account").style.display = 'block';
+        document.getElementById("body").style.backgroundColor = 'rgba(180, 169, 169, 0.795)'
+
+    }
+
+    function exit() {
+        document.getElementById("exit").style.display = 'none'
+    }
+</script>
+
+</html>
