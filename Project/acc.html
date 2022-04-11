@@ -112,8 +112,8 @@
 
         let username = document.getElementById('usname').value;
         let password = document.getElementById('psword').value;
-        let usSignUp = localStorage.getItem('username')
-        let psSignUp = localStorage.getItem('password')
+        let usSignUp = localStorage.getItem('username');
+        let psSignUp = localStorage.getItem('password');
         if (username == usSignUp && password == psSignUp) {
             alert("SUCCESS !");
             document.getElementById("signIn").style.display = 'none';

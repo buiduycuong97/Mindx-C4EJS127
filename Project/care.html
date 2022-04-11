@@ -255,7 +255,7 @@
                     <label for="">Message</label><br>
                     <textarea name="" id="message" cols="30" rows="10"></textarea>
                     <div class="sub_reset">
-                        <input type="submit" id="subRe" onclick="">
+                        <input type="submit" id="subRe" onsubmit="submitform()">
                         <input type="reset" id="subRe">
                     </div>
 
@@ -306,6 +306,10 @@
         document.getElementById("body").style.backgroundColor = 'rgba(180, 169, 169, 0.795)';
     }
 
+    function submitform() {
+        alert("SUCCESS !")
+    }
+
     function submitformsignUp() {
         document.getElementById("signIn").style.display = 'none';
         document.getElementById("signUp").style.display = 'none';
@@ -321,8 +325,8 @@
 
         let username = document.getElementById('usname').value;
         let password = document.getElementById('psword').value;
-        let usSignUp = localStorage.getItem('username')
-        let psSignUp = localStorage.getItem('password')
+        let usSignUp = localStorage.getItem('username');
+        let psSignUp = localStorage.getItem('password');
         if (username == usSignUp && password == psSignUp) {
             alert("SUCCESS !");
             document.getElementById("signIn").style.display = 'none';
